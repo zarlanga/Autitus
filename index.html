@@ -15,7 +15,7 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-		
+		<!--<link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
 		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -26,7 +26,15 @@
 		}
 		.navbar{
 			padding: 0px 40px;
+      background-color:black;
 		}
+    .navbar >div {
+    width:1000px;
+      margin:0 auto;
+     /* background-color: #222;*/
+      display:flex;
+      justify-content: space-between;
+    }
 		nav a {
 			color: white !important;
 			padding: 30px 5px 20px;
@@ -38,6 +46,7 @@
 		}
 		.home{
 			width:100px;
+      padding:0;
 		}
 		.activeC{
 			background-color:blue;
@@ -54,27 +63,44 @@
 		font-size:0;
 		}**/
 		.seccion1 > div {
-			font-size:14px;
-			height:40vh;
-		/*	width:49.5%;**/
+			/*	font-size:14px;
+		height:40vh;
+			width:49.5%;**/
 			background-color:gray;
 			display:inline-block;
 			margin:0px;
+      padding:0px;
 		}
-		.seccion1  > div:nth-child(1){
+	/*	.seccion1  > div:nth-child(1){
 			background-color:cyan;
-		}
+		}*/
+      section img {
+        width:100%;
+      }
+      
+      #carouselExampleControls{
+        height:100%;
+      }
+      
 		.seccion1 > div > div >div {
-		height:40vh;
-		/*background-color:silver;*/
+		padding: 60px 30px 40px;
+      height:100%;
+    /*align-items:stretch;
+    justify-content:stretch;
+      height:40vh;
+		background-color:silver;*/
 		}
+      .carousel-item p {
+        color:white;
+      }
+      
 		.carousel-indicators li{
 			height: 14px !important;
-			border-radius: 0px !important;
+		/*	border-radius: 0px !important;*/
 			width: 15px;
 		}
 		.carousel-indicators{
-			margin:0px;
+			margin:0 0 20px 30px;
 			justify-content:flex-start;
 		} 
 		.carousel{
@@ -89,30 +115,94 @@
 			.navbar{
 			padding:0;
 			}
+      .navbar >div {
+        display: block;
+      }
 		}
 		
+      
+/*******seccion 2 ******/
+      
+      
+      .section2 {
+        max-width:1000px;
+        
+        margin: 15px auto;
+       /* background-color: #eee;*/
+        
+      }
+      
+      .titulo{
+        border-bottom: 2px solid black;
+        width:100%;
+        /*padding:0 10px;*/
+        margin:0 10px;
+      }
+     
+      .section2 p{
+        font-size:12px;
+      }
+      .section2 div{
+        padding:10px 10px;
+      }
+      .col-sm-3 .titulo{
+        margin:0;
+      }
+      
+      
+      
+      footer{
+        background-color: #00f;
+        color:cyan;
+        display:flex;
+        justify-content: center;
+        
+      }
+      footer > div {
+        
+        width:1000px;
+        margin: 5px auto;
+        
+        display:flex;
+        justify-content: space-between;
+         align-items: center;
+       /* background-color: #00c;*/
+      }
+      footer > div > div{
+        padding:0 !important;
+        /*background-color: #009;*/
+      }
+      footer a{
+        font-size: 10px;
+      }
+      footer div:nth-child(2){
+        text-align:right;
+       
+      }
 		</style>
 	</head>
 	<body>
 	
 	<header>
 		
-		<nav class="navbar bg-dark " >
-			<a class="nav-item home">LOGO</a>
-			<a class="nav-item activeC">INICIO</a>
-			<a class="nav-item">QUIENES SOMOS</a>
-			<a class="nav-item">CATALOGO</a>
-			<a class="nav-item">NOVEDADES</a>
-			<a class="nav-item">LANZAMIENTOS</a>
-			<a class="nav-item">CALIDAD</a>
-			<a class="nav-item">CONTACTO</a>
-			<a class="nav-item acceso">ACCESO A DISTRIBUIDORES</a>
+		<nav class="navbar" >
+      <div>
+        <a class="nav-item home"><img src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2Flogoheader.jpg?v=1588367147610"></a>
+        <a class="nav-item activeC">INICIO</a>
+        <a class="nav-item">QUIENES SOMOS</a>
+        <a class="nav-item">CATALOGO</a>
+        <a class="nav-item">NOVEDADES</a>
+        <a class="nav-item">LANZAMIENTOS</a>
+        <a class="nav-item">CALIDAD</a>
+        <a class="nav-item">CONTACTO</a>
+        <a class="nav-item acceso">ACCESO A DISTRIBUIDORES</a>
+      </div>
 		</nav>
 	</header>
 	<section class="seccion1 row">
-		<div class="col-sm-6">asdf
+		<div class="col-md-6"><img src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2Fengine.jpg?v=1588354039538"/>
 		</div>
-		<div class="col-sm-6">
+		<div class="col-md-6">
 		
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel"  data-interval="3000">
 				<ol class="carousel-indicators">
@@ -123,23 +213,23 @@
 				</ol>  
 				<div class="carousel-inner">
 				  <div class="carousel-item active">
-					<h3>Lubricacion de embragues para vehiculos pesados</h3>
+					<h2>Lubricacion de embragues para vehiculos pesados</h2>
 					<p>El emgrague es el componente que permitira controlar la transmision de energia desde el motor hasta las ruedas,
 					por lo que la lubricacion de sus partes sera muy importante.</p>
 					<button class="btn btn-primary">VER MAS</button>
 				  </div>
 				  <div class="carousel-item">
-					<h3>Un elefante se balanceaba</h3>
+            <h2>Un elefante se balanceaba</h2>
 					<p>Sobre la tela de una lorem ipsum</p>
 					<button class="btn btn-primary">VER MAS</button>
 				  </div>
 				  <div class="carousel-item">
-					<h3>Lubricacion nunca tiene que faltar</h3>
+					<h2>Lubricacion nunca tiene que faltar</h2>
 					<p> porque cuando hace calor hay que estar bien hidratados</p>
 					<button class="btn btn-primary">VER MAS</button>
 				  </div>
 				  <div class="carousel-item">
-					<h3>AI LAIK TO BI UNDER THE SEA IN AN OCTUPUS GARDEN IN THE SHADE</h3>
+					<h2>AI LAIK TO BI UNDER THE SEA IN AN OCTUPUS GARDEN IN THE SHADE</h2>
 					<p> pepe pepepeepe pepepep pe epe eep asdljfhasdlfkgjahsdflkvajhmsfgvakjsdfh</p>
 					<button class="btn btn-primary">VER MAS</button>
 				  </div>
@@ -150,6 +240,98 @@
 
 		</div>
 	</section>
+    
+    <section class="section2">
+    
+      
+      <div class="row">
+        <h3 class="titulo">
+          Novedades
+        </h3>
+        <div class="col-md-6 row">
+          
+          <div class="col-sm-6">
+            <img  src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2Fbanderas.jpg?v=1588361653020"/>
+          </div>
+          <div class="col-sm-6">
+            <h5 >
+              Event Expo Mecanica 2016/2017
+            </h5>  
+            <p>
+              Lorem ipsum dolor sit amet, conse;alkjsdf;alksjdf lalala peron peron sababra sabara though we all grieve the loss of mighty tassadar y etc etc etc
+            </p>
+            <button class="btn-dark">
+              VER MAS
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6 row">
+          <div class="col-sm-6">
+            <img  src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2Fpantuflo.jpg?v=1588363218410"/>
+          </div>
+          <div class="col-sm-6">
+            <h5 >
+              Embragues para vehiculos comerciales
+            </h5>  
+            <p>
+              Para los vehiculos comerciales hemos desarrollado todo tipo de disco de embrague para camiones, Volvo, Mercedes Benz, camiones Scania, man, Renault, Fiat.
+            </p>
+            <button class="btn-dark">
+              VER MAS
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        
+        <div class="col-md-9 row">
+          <h3 class="titulo">
+             Nuestra Empresa
+          </h3>
+          <div class="col-sm-8">
+            <img src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2FCoso.jpg?v=1588363369701">
+          </div>
+          <div class="col-sm-4">
+            <p>
+              IAR METAL es una empresa re metalera que le gustar el rockanrolnnnenne desde 1981 a la fabricacion y atencion del mercado de reposicionamiento en las carreras de caballos pero digale no a la timba porque la venganza nunca es buena mata el alma y la envenena.
+            </p>
+            <button class="btn-dark">
+              VER MAS
+            </button>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h3 class="titulo">
+            Catalogos
+          </h3>
+          <img src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2Fotrocoso.jpg?v=1588363369658">
+          <button class="btn-dark">
+              DESCARGAR AQUI
+          </button>
+        </div>
+      </div>
+      
+    </section>  
+    <footer>
+      <div class="row">
+        <div class="col-3">
+          <img src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2Flogofooter.jpg?v=1588367147473">
+        </div>
+        <div class="col-8">
+          <a>INICIO</a> 
+          <a>QUIENES SOMOS</a>
+          <a>CATALOGO</a>
+          <a>NOVEDADES</a>
+          <a>LANZAMIENTOS</a>
+          <a>CALIDAD</a>
+          <a>CONTACTO</a>
+          ICONICONICON
+        </div>
+        
+      </div>
+    </footer>
+    
 	</body>
 </html>
 <!--<!DOCTYPE html>
