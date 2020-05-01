@@ -54,27 +54,44 @@
 		font-size:0;
 		}**/
 		.seccion1 > div {
-			font-size:14px;
-			height:40vh;
-		/*	width:49.5%;**/
+			/*	font-size:14px;
+		height:40vh;
+			width:49.5%;**/
 			background-color:gray;
 			display:inline-block;
 			margin:0px;
+      padding:0px;
 		}
-		.seccion1  > div:nth-child(1){
+	/*	.seccion1  > div:nth-child(1){
 			background-color:cyan;
-		}
+		}*/
+      section img {
+        width:100%;
+      }
+      
+      #carouselExampleControls{
+        height:100%;
+      }
+      
 		.seccion1 > div > div >div {
-		height:40vh;
-		/*background-color:silver;*/
+		padding: 60px 30px 40px;
+      height:100%;
+    /*align-items:stretch;
+    justify-content:stretch;
+      height:40vh;
+		background-color:silver;*/
 		}
+      .carousel-item p {
+        color:white;
+      }
+      
 		.carousel-indicators li{
 			height: 14px !important;
-			border-radius: 0px !important;
+		/*	border-radius: 0px !important;*/
 			width: 15px;
 		}
 		.carousel-indicators{
-			margin:0px;
+			margin:0 0 20px 30px;
 			justify-content:flex-start;
 		} 
 		.carousel{
@@ -91,6 +108,34 @@
 			}
 		}
 		
+      
+/*******seccion 2 ******/
+      
+      
+      .section2 {
+        max-width:1000px;
+        
+        margin: 15px auto;
+       /* background-color: #eee;*/
+        
+      }
+      
+      .titulo{
+        border-bottom: 2px solid black;
+        width:100%;
+        /*padding:0 10px;*/
+        margin:0 10px;
+      }
+     
+      .section2 p{
+        font-size:12px;
+      }
+      .section2 div{
+        padding:10px 10px;
+      }
+      .col-sm-3 .titulo{
+        margin:0;
+      }
 		</style>
 	</head>
 	<body>
@@ -110,7 +155,7 @@
 		</nav>
 	</header>
 	<section class="seccion1 row">
-		<div class="col-sm-6">asdf
+		<div class="col-sm-6"><img src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2Fengine.jpg?v=1588354039538"/>
 		</div>
 		<div class="col-sm-6">
 		
@@ -123,23 +168,23 @@
 				</ol>  
 				<div class="carousel-inner">
 				  <div class="carousel-item active">
-					<h3>Lubricacion de embragues para vehiculos pesados</h3>
+					<h2>Lubricacion de embragues para vehiculos pesados</h2>
 					<p>El emgrague es el componente que permitira controlar la transmision de energia desde el motor hasta las ruedas,
 					por lo que la lubricacion de sus partes sera muy importante.</p>
 					<button class="btn btn-primary">VER MAS</button>
 				  </div>
 				  <div class="carousel-item">
-					<h3>Un elefante se balanceaba</h3>
+            <h2>Un elefante se balanceaba</h2>
 					<p>Sobre la tela de una lorem ipsum</p>
 					<button class="btn btn-primary">VER MAS</button>
 				  </div>
 				  <div class="carousel-item">
-					<h3>Lubricacion nunca tiene que faltar</h3>
+					<h2>Lubricacion nunca tiene que faltar</h2>
 					<p> porque cuando hace calor hay que estar bien hidratados</p>
 					<button class="btn btn-primary">VER MAS</button>
 				  </div>
 				  <div class="carousel-item">
-					<h3>AI LAIK TO BI UNDER THE SEA IN AN OCTUPUS GARDEN IN THE SHADE</h3>
+					<h2>AI LAIK TO BI UNDER THE SEA IN AN OCTUPUS GARDEN IN THE SHADE</h2>
 					<p> pepe pepepeepe pepepep pe epe eep asdljfhasdlfkgjahsdflkvajhmsfgvakjsdfh</p>
 					<button class="btn btn-primary">VER MAS</button>
 				  </div>
@@ -150,6 +195,81 @@
 
 		</div>
 	</section>
+    
+    <section class="section2">
+    
+      
+      <div class="row">
+        <h3 class="titulo">
+          Novedades
+        </h3>
+        <div class="col-md-6 row">
+          
+          <div class="col-sm-6">
+            <img  src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2Fbanderas.jpg?v=1588361653020"/>
+          </div>
+          <div class="col-sm-6">
+            <h5 >
+              Event Expo Mecanica 2016/2017
+            </h5>  
+            <p>
+              Lorem ipsum dolor sit amet, conse;alkjsdf;alksjdf lalala peron peron sababra sabara though we all grieve the loss of mighty tassadar y etc etc etc
+            </p>
+            <button class="btn-dark">
+              VER MAS
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6 row">
+          <div class="col-sm-6">
+            <img  src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2Fpantuflo.jpg?v=1588363218410"/>
+          </div>
+          <div class="col-sm-6">
+            <h5 >
+              Embragues para vehiculos comerciales
+            </h5>  
+            <p>
+              Para los vehiculos comerciales hemos desarrollado todo tipo de disco de embrague para camiones, Volvo, Mercedes Benz, camiones Scania, man, Renault, Fiat.
+            </p>
+            <button class="btn-dark">
+              VER MAS
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        
+        <div class="col-md-9 row">
+          <h3 class="titulo">
+             Nuestra Empresa
+          </h3>
+          <div class="col-sm-8">
+            <img src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2FCoso.jpg?v=1588363369701">
+          </div>
+          <div class="col-sm-4">
+            <p>
+              IAR METAL es una empresa re metalera que le gustar el rockanrolnnnenne desde 1981 a la fabricacion y atencion del mercado de reposicionamiento en las carreras de caballos pero digale no a la timba porque la venganza nunca es buena mata el alma y la envenena.
+            </p>
+            <button class="btn-dark">
+              VER MAS
+            </button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h3 class="titulo">
+            Catalogos
+          </h3>
+          <img src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2Fotrocoso.jpg?v=1588363369658">
+          <button class="btn-dark">
+              DESCARGAR AQUI
+          </button>
+        </div>
+      </div>
+      
+    </section>  
+    
+    
 	</body>
 </html>
 <!--<!DOCTYPE html>
