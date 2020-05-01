@@ -15,7 +15,7 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-		
+		<!--<link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
 		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -26,7 +26,15 @@
 		}
 		.navbar{
 			padding: 0px 40px;
+      background-color:black;
 		}
+    .navbar >div {
+    width:1000px;
+      margin:0 auto;
+     /* background-color: #222;*/
+      display:flex;
+      justify-content: space-between;
+    }
 		nav a {
 			color: white !important;
 			padding: 30px 5px 20px;
@@ -38,6 +46,7 @@
 		}
 		.home{
 			width:100px;
+      padding:0;
 		}
 		.activeC{
 			background-color:blue;
@@ -106,6 +115,9 @@
 			.navbar{
 			padding:0;
 			}
+      .navbar >div {
+        display: block;
+      }
 		}
 		
       
@@ -136,28 +148,61 @@
       .col-sm-3 .titulo{
         margin:0;
       }
+      
+      
+      
+      footer{
+        background-color: #00f;
+        color:cyan;
+        display:flex;
+        justify-content: center;
+        
+      }
+      footer > div {
+        
+        width:1000px;
+        margin: 5px auto;
+        
+        display:flex;
+        justify-content: space-between;
+         align-items: center;
+       /* background-color: #00c;*/
+      }
+      footer > div > div{
+        padding:0 !important;
+        /*background-color: #009;*/
+      }
+      footer a{
+        font-size: 10px;
+      }
+      footer div:nth-child(2){
+        text-align:right;
+       
+      }
 		</style>
 	</head>
 	<body>
 	
 	<header>
 		
-		<nav class="navbar bg-dark " >
-			<a class="nav-item home">LOGO</a>
-			<a class="nav-item activeC">INICIO</a>
-			<a class="nav-item">QUIENES SOMOS</a>
-			<a class="nav-item">CATALOGO</a>
-			<a class="nav-item">NOVEDADES</a>
-			<a class="nav-item">LANZAMIENTOS</a>
-			<a class="nav-item">CALIDAD</a>
-			<a class="nav-item">CONTACTO</a>
-			<a class="nav-item acceso">ACCESO A DISTRIBUIDORES</a>
+		<nav class="navbar" >
+      <div>
+        <a class="nav-item home"><img src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2Flogoheader.jpg?v=1588367147610"></a>
+        <a class="nav-item activeC">INICIO</a>
+        <a class="nav-item">QUIENES SOMOS</a>
+        <a class="nav-item">CATALOGO</a>
+        <a class="nav-item">NOVEDADES</a>
+        <a class="nav-item">LANZAMIENTOS</a>
+        <a class="nav-item">CALIDAD</a>
+        <a class="nav-item">CONTACTO</a>
+        <a class="nav-item acceso">ACCESO A DISTRIBUIDORES</a>
+      </div>
 		</nav>
 	</header>
 	<section class="seccion1 row">
-		<div class="col-sm-6"><img src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2Fengine.jpg?v=1588354039538"/>
+		<div class="col-md-6"><img src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2Fengine.jpg?v=1588354039538"/>
 		</div>
-		<div class="col-sm-6">
+		<div class="col-md-6">
 		
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel"  data-interval="3000">
 				<ol class="carousel-indicators">
@@ -256,7 +301,7 @@
             </button>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6">
           <h3 class="titulo">
             Catalogos
           </h3>
@@ -268,7 +313,24 @@
       </div>
       
     </section>  
-    
+    <footer>
+      <div class="row">
+        <div class="col-3">
+          <img src="https://cdn.glitch.com/fe8c8095-e762-4bc2-b41b-593791758420%2Flogofooter.jpg?v=1588367147473">
+        </div>
+        <div class="col-8">
+          <a>INICIO</a> 
+          <a>QUIENES SOMOS</a>
+          <a>CATALOGO</a>
+          <a>NOVEDADES</a>
+          <a>LANZAMIENTOS</a>
+          <a>CALIDAD</a>
+          <a>CONTACTO</a>
+          ICONICONICON
+        </div>
+        
+      </div>
+    </footer>
     
 	</body>
 </html>
